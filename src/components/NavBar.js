@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "./logo.png";
+
 const NavBar = (props) => {
   return (
     <div>
@@ -7,8 +9,8 @@ const NavBar = (props) => {
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img
-              src="../logo.png"
-              alt="l"
+              src={logo}
+              alt="logo"
               width="40"
               height="32"
               className="d-inline-block align-text-top"
