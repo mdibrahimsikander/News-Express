@@ -1,0 +1,12 @@
+.video-grid {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Ensure each video container takes up half of the available width */
+  .video-container {
+    width: calc(50% - 10px); /* Subtract margin and padding */
+    margin-bottom: 20px;
+  }
+  

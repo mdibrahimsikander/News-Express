@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "./logo.png";
 import { useState } from "react";
 
-const NavBar = (props) => {
+const NavBar = () => {
 
   // eslint-disable-next-line no-undef
   const [currentCategory, setCurrentCategory] = useState("Category");

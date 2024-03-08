@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const VideoContainer = ({ videoLink }) => {
   return (
-    <div className='container mt-5 p-auto text-center'>
+    <div className='mt-5 p-auto text-center'>
       <iframe
         width="560"
         height="315"
