@@ -1,8 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "./logo.png";
+import { useState } from "react";
 
 const NavBar = (props) => {
+
+  // eslint-disable-next-line no-undef
+  const [currentCategory, setCurrentCategory] = useState("Category");
+
+  const handleCategorySelect = (category) => {
+    setCurrentCategory(category);
+  };
+
+
   return (
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -48,41 +58,41 @@ const NavBar = (props) => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  {props.category}
+                  {currentCategory}
                 </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to="/Business">
+                    <Link className="dropdown-item" to="/Business" onClick={() => handleCategorySelect("Business")}>
                       Business
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/Entertainment">
+                    <Link className="dropdown-item" to="/Entertainment" onClick={() => handleCategorySelect("Entertainment")}>
                       Entertainment
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/General">
+                    <Link className="dropdown-item" to="/General" onClick={() => handleCategorySelect("General")}>
                       General
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/Health">
+                    <Link className="dropdown-item" to="/Health" onClick={() => handleCategorySelect("Health")}>
                       Health
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/Science">
+                    <Link className="dropdown-item" to="/Science" onClick={() => handleCategorySelect("Science")}>
                       Science
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/Sports">
+                    <Link className="dropdown-item" to="/Sports" onClick={() => handleCategorySelect("Sports")}>
                       Sports
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/Technology">
+                    <Link className="dropdown-item" to="/Technology" onClick={() => handleCategorySelect("Technology")}>
                       Technology
                     </Link>
                   </li>
