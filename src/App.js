@@ -6,6 +6,7 @@ import News from "./components/News";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
+import LiveNews from "./components/LiveNews/LiveNews";
 
 const App = () => {
   const pageSize = 9;
@@ -120,6 +121,13 @@ const App = () => {
                 country={"in"}
                 category={"Technology"}
               />
+            }
+          />
+          <Route
+            exact
+            path="/liveNews"
+            element={
+              <LiveNews/>
             }
           />
         </Routes>
