@@ -88,11 +88,11 @@ const NavBar = (props) => {
                   </li>
                 </ul>
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link text-danger fw-bold" to="/liveNews">
                   Watch Live News
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>
